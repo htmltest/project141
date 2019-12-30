@@ -98,11 +98,11 @@
                     <div class="breadcrumbs"><a href="#">Varilight</a><span></span><a href="#">Коллекции</a><span></span>Коллекция JUBILEE</div>
                     <div class="back-link"><a href="#">Коллекции</a></div>
 
+                    <h2>Покрытия</h2>
+
                     <!-- collection surface -->
                     <div class="collection-surface">
-                        <div class="collection-surface-title">
-                            <div class="collection-surface-title-inner">Покрытия</div>
-                        </div>
+                        <div class="collection-surface-photo"><img src="files/collection-surface.jpg" alt="" /></div>
                         <div class="collection-surface-list">
                             <div class="collection-surface-item">
                                 <div class="collection-surface-item-preview"><img src="files/collection-surface-1.jpg" alt="" /></div>
@@ -143,17 +143,22 @@
                             <div class="collection-products-ctrl">
                                 <form action="ajax/collection-products-filter.html" method="post">
                                     <div class="collection-products-filter">
-                                        <div class="collection-products-filter-current">Фильтры</div>
+                                        <div class="collection-products-filter-current">
+                                            <div class="collection-products-filter-current-title">Фильтр</div>
+                                            <div class="collection-products-filter-current-list">
+                                            </div>
+                                            <div class="collection-products-filter-current-arrow"></div>
+                                        </div>
                                         <div class="collection-products-filter-list">
                                             <div class="collection-products-filter-wrap">
                                                 <div class="collection-products-filter-inner">
                                                     <div class="collection-products-filter-group">
                                                         <div class="collection-products-filter-group-title">Количество сокетов</div>
                                                         <div class="collection-products-filter-group-list">
-                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="1" checked="checked" /><span>1</span></label></div>
-                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="2" /><span>2</span></label></div>
-                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="3" /><span>3</span></label></div>
-                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="4" /><span>4</span></label></div>
+                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="1" checked="checked" /><span><div class="filter-sockets"><em></em></div></span></label></div>
+                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="2" /><span><div class="filter-sockets"><em></em><em></em></div></span></label></div>
+                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="3" /><span><div class="filter-sockets"><em></em><em></em><em></em></div></span></label></div>
+                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="4" /><span><div class="filter-sockets"><em></em><em></em><em></em><em></em></div></span></label></div>
                                                         </div>
                                                     </div>
                                                     <div class="collection-products-filter-group">
@@ -210,59 +215,91 @@
                         <div class="collection-products-container">
                             <div class="collection-products-list">
                                 <div class="collection-products-item">
-                                    <div class="collection-products-item-preview"><a href="#"><img src="files/collection-item-1.jpg" alt="" /></a><div class="collection-products-item-newently">Новинка</div></div>
-                                    <div class="collection-products-item-title"><a href="#">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</a></div>
-                                    <div class="collection-products-item-price">€ 9.29</div>
-                                    <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    <div class="collection-products-item-wrap">
+                                        <a href="#" class="collection-products-item-inner">
+                                            <div class="collection-products-item-preview"><img src="files/collection-item-1.jpg" alt="" /><div class="collection-products-item-newently">Новинка</div></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-price">€ 9.29</div>
+                                        </a>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    </div>
                                 </div>
 
                                 <div class="collection-products-item gold">
-                                    <div class="collection-products-item-preview"><a href="#"><img src="files/collection-item-2.jpg" alt="" /></a><div class="collection-products-item-discontinued">Снято с производства</div></div>
-                                    <div class="collection-products-item-title"><a href="#">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</a></div>
-                                    <div class="collection-products-item-price">€ 9.29</div>
-                                    <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    <div class="collection-products-item-wrap">
+                                        <a href="#" class="collection-products-item-inner">
+                                            <div class="collection-products-item-preview"><img src="files/collection-item-2.jpg" alt="" /><div class="collection-products-item-discontinued">Снято с производства</div></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-price">€ 9.29</div>
+                                        </a>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    </div>
                                 </div>
 
                                 <div class="collection-products-item">
-                                    <div class="collection-products-item-preview"><a href="#"><img src="files/collection-item-3.jpg" alt="" /></a></div>
-                                    <div class="collection-products-item-title"><a href="#">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</a></div>
-                                    <div class="collection-products-item-price">€ 9.29</div>
-                                    <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    <div class="collection-products-item-wrap">
+                                        <a href="#" class="collection-products-item-inner">
+                                            <div class="collection-products-item-preview"><img src="files/collection-item-3.jpg" alt="" /></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-price">€ 9.29</div>
+                                        </a>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    </div>
                                 </div>
 
                                 <div class="collection-products-item">
-                                    <div class="collection-products-item-preview"><a href="#"><img src="files/collection-item-4.jpg" alt="" /></a></div>
-                                    <div class="collection-products-item-title"><a href="#">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</a></div>
-                                    <div class="collection-products-item-price">€ 9.29</div>
-                                    <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    <div class="collection-products-item-wrap">
+                                        <a href="#" class="collection-products-item-inner">
+                                            <div class="collection-products-item-preview"><img src="files/collection-item-4.jpg" alt="" /></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-price">€ 9.29</div>
+                                        </a>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    </div>
                                 </div>
 
                                 <div class="collection-products-item">
-                                    <div class="collection-products-item-preview"><a href="#"><img src="files/collection-item-5.jpg" alt="" /></a></div>
-                                    <div class="collection-products-item-title"><a href="#">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</a></div>
-                                    <div class="collection-products-item-price">€ 9.29</div>
-                                    <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    <div class="collection-products-item-wrap">
+                                        <a href="#" class="collection-products-item-inner">
+                                            <div class="collection-products-item-preview"><img src="files/collection-item-5.jpg" alt="" /></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-price">€ 9.29</div>
+                                        </a>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    </div>
                                 </div>
 
                                 <div class="collection-products-item">
-                                    <div class="collection-products-item-preview"><a href="#"><img src="files/collection-item-6.jpg" alt="" /></a></div>
-                                    <div class="collection-products-item-title"><a href="#">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</a></div>
-                                    <div class="collection-products-item-price">€ 9.29</div>
-                                    <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    <div class="collection-products-item-wrap">
+                                        <a href="#" class="collection-products-item-inner">
+                                            <div class="collection-products-item-preview"><img src="files/collection-item-6.jpg" alt="" /></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-price">€ 9.29</div>
+                                        </a>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    </div>
                                 </div>
 
                                 <div class="collection-products-item">
-                                    <div class="collection-products-item-preview"><a href="#"><img src="files/collection-item-1.jpg" alt="" /></a></div>
-                                    <div class="collection-products-item-title"><a href="#">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</a></div>
-                                    <div class="collection-products-item-price">€ 9.29</div>
-                                    <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    <div class="collection-products-item-wrap">
+                                        <a href="#" class="collection-products-item-inner">
+                                            <div class="collection-products-item-preview"><img src="files/collection-item-1.jpg" alt="" /></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-price">€ 9.29</div>
+                                        </a>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    </div>
                                 </div>
 
                                 <div class="collection-products-item">
-                                    <div class="collection-products-item-preview"><a href="#"><img src="files/collection-item-2.jpg" alt="" /></a></div>
-                                    <div class="collection-products-item-title"><a href="#">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</a></div>
-                                    <div class="collection-products-item-price">€ 9.29</div>
-                                    <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    <div class="collection-products-item-wrap">
+                                        <a href="#" class="collection-products-item-inner">
+                                            <div class="collection-products-item-preview"><img src="files/collection-item-2.jpg" alt="" /></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-price">€ 9.29</div>
+                                        </a>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -285,41 +322,27 @@
                     <!-- collection download -->
                     <div class="collection-download">
                         <h2>Скачать</h2>
-                        <div class="collection-download-list">
-                            <div class="collection-download-block">
-                                <div class="collection-download-item">
-                                    <h3>Сертификат соответствия</h3>
-                                    <p>Внешний вид документов о соответствии довольно часто интересует компании, которые выставляют наличие сертификата ГОСТ ISO 9001-2011 в качестве условия заключения контрактов с новыми поставщиками. На этот счет в известном журнале «Quality Digest» опубликована специальная статья Мириам Будро, президента консалтинговой компании «Mireaux Management Solutions».</p>
-                                    <div class="download-item">
-                                        <div class="download-item-link"><a href="#"><span>Сертификат соответствия</span> PDF 2.4mb</a></div>
-                                    </div>
+
+                        <div class="download-list">
+                            <div class="download-group">
+                                <div class="download-item">
+                                    <div class="download-item-link"><a href="#"><span>Сертификат соответствия</span> PDF 2.4mb</a></div>
+                                    <div class="download-item-text">Внешний вид документов о соответствии довольно часто интересует компании, которые выставляют.</div>
+                                </div>
+                                <div class="download-item">
+                                    <div class="download-item-link"><a href="#"><span>RCU Product Family EAE-KNX Room Control Units</span> PDF 3 MB</a></div>
+                                </div>
+                                <div class="download-item">
+                                    <div class="download-item-link"><a href="#"><span>DA100 EAE-KNX Dali Gateway</span> PDF 3 MB</a></div>
                                 </div>
                             </div>
-
-                            <div class="collection-download-block">
-                                <div class="collection-download-item">
-                                    <h3>Сертификат соответствия</h3>
-                                    <div class="download-item">
-                                        <div class="download-item-link"><a href="#"><span>Сертификат соответствия</span> PDF 2.4mb</a></div>
-                                    </div>
+                            <div class="download-group">
+                                <div class="download-item">
+                                    <div class="download-item-link"><a href="#"><span>Каталог Varilight 2019</span> PDF 2.4mb</a></div>
+                                    <div class="download-item-text">Внешний вид документов о соответствии довольно часто интересует компании, которые выставляют.</div>
                                 </div>
-                            </div>
-
-                            <div class="collection-download-block">
-                                <div class="collection-download-item">
-                                    <h3>Сертификат соответствия</h3>
-                                    <div class="download-item">
-                                        <div class="download-item-link"><a href="#"><span>Сертификат соответствия</span> PDF 2.4mb</a></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="collection-download-block">
-                                <div class="collection-download-item">
-                                    <h3>Сертификат соответствия</h3>
-                                    <div class="download-item">
-                                        <div class="download-item-link"><a href="#"><span>Сертификат соответствия</span> PDF 2.4mb</a></div>
-                                    </div>
+                                <div class="download-item">
+                                    <div class="download-item-link"><a href="#"><span>Каталог Varilight 2018</span> PDF 2.4mb</a></div>
                                 </div>
                             </div>
                         </div>
