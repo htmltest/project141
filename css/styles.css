@@ -1232,18 +1232,22 @@ footer {height:263px; position:relative; margin:-263px 0 0 0}
     footer {height:auto; margin:100px 0 0 0}
 }
 
-.footer-inner {border-top:2px solid #000}
+.footer-inner {border-top:2px solid #000; position:relative}
 .footer-inner::after {content:""; display:block; clear:both}
 
 @media screen and (max-width:1159px) {
-    .footer-inner {padding:0 0 137px 0; position:relative}
+    .footer-inner {padding:0 0 256px 0}
     .footer-inner::after {display:none}
 }
 
-.footer-logo {float:left; margin:30px 0 0 0; width:130px; height:77px; background:url(../images/footer-logo.png) no-repeat}
+.footer-left {float:left; margin:30px 0 0 0; width:393px}
+.footer-logo {width:130px; height:77px; background:url(../images/footer-logo.png) no-repeat}
+.footer-copyrights {font-size:12px; line-height:16px; color:#898989; font-weight:normal; margin:69px 0 0 0}
 
 @media screen and (max-width:1159px) {
-    .footer-logo {float:none; margin:0; width:127px; height:75px; background:url(../images/footer-logo-mobile.png) no-repeat; position:absolute; left:0; bottom:30px}
+    .footer-left {float:none; margin:0; width:auto}
+    .footer-logo {float:none; margin:0; width:127px; height:75px; background:url(../images/footer-logo-mobile.png) no-repeat; position:absolute; left:0; bottom:151px}
+    .footer-copyrights {margin:0; position:absolute; left:0; bottom:94px; font-size:18px; line-height:27px; font-weight:300; color:#000}
 }
 
 .footer-content-title {display:none}
@@ -1258,7 +1262,7 @@ footer {height:263px; position:relative; margin:-263px 0 0 0}
     .footer-content-inner::after {content:""; display:block; clear:both}
 }
 
-.footer-menu {float:left; margin:30px 0 0 263px; width:199px; font-size:14px; line-height:19px}
+.footer-menu {float:left; margin:30px 0 0 0; width:199px; font-size:14px; line-height:19px}
 .footer-menu ul {margin:0; padding:0; list-style:none}
 .footer-menu ul li {margin:11px 0 0 0; padding:0}
 .footer-menu ul li:first-child {margin:0}
@@ -1286,6 +1290,15 @@ footer {height:263px; position:relative; margin:-263px 0 0 0}
     .footer-catalogue ul li:first-child {margin:0}
 }
 
+.footer-euro {position:absolute; right:435px; top:157px; width:133px; text-align:center; font-size:16px; line-height:41px; font-weight:600; height:43px; border:1px solid #d6d6d6; border-radius:4px; color:#222}
+.footer-euro strong {font-weight:600; font-size:22px; color:#362985; display:inline-block; vertical-align:middle}
+.footer-euro span {font-weight:normal; display:inline-block; vertical-align:middle; margin:0 0 0 10px}
+
+@media screen and (max-width:1159px) {
+    .footer-euro {top:auto; bottom:171px; right:0; width:164px; height:55px; line-height:53px; font-size:20px}
+    .footer-euro strong {font-size:26px}
+}
+
 .footer-contacts {text-align:right; float:right; margin:30px 0 0 0}
 .footer-contacts-title {display:none}
 .footer-email {font-size:14px; line-height:19px; font-weight:bold; text-transform:uppercase}
@@ -1295,24 +1308,24 @@ footer {height:263px; position:relative; margin:-263px 0 0 0}
 .footer-phone a {text-decoration:none; color:#000}
 .footer-address {font-size:14px; line-height:19px; margin:10px 0 0 0}
 .footer-schedule {font-size:14px; line-height:19px; margin:10px 0 0 0}
-.footer-copyrights {font-size:12px; line-height:16px; color:#898989; font-weight:normal; margin:34px 0 0 0}
+.footer-social {font-size:0; line-height:0; letter-spacing:-1px; margin:21px 0 0 0}
+.footer-social a {display:inline-block; width:32px; height:32px; margin:0 0 0 12px; text-align:center}
+.footer-social a:first-child {margin:0}
+.footer-social path {fill:#5543c6; transition:all 0.2s}
+.footer-social a:hover path {fill:#221e52}
 
 @media screen and (max-width:1159px) {
     .footer-contacts {text-align:left; float:none; margin:0 -20px; padding:0 20px; border-bottom:1px solid #e5e5e5}
     .footer-contacts-title {display:block; position:relative; padding:30px 0 33px 0; font-size:24px; line-height:33px; font-weight:normal; color:#292929}
     .footer-contacts-title::after {content:""; display:block; position:absolute; right:0; top:50%; margin-top:-8px; width:24px; height:15px; background:url(../images/footer-menu-mobile.svg) no-repeat; transition:all 0.2s}
     .footer-contacts.open .footer-contacts-title::after {transform:rotate(-180deg)}
-    .footer-contacts-content {position:absolute; left:-9999px; top:-9999px; opacity:0; transition:all 0.2s; margin:0; padding:7px 0 34px 0}
+    .footer-contacts-content {position:absolute; left:-9999px; top:-9999px; opacity:0; transition:all 0.2s; margin:0; padding:7px 0 54px 0}
     .footer-contacts.open .footer-contacts-content {position:relative; left:auto; top:auto; opacity:1}
     .footer-email {font-size:20px; line-height:27px; font-weight:normal; text-transform:none}
     .footer-phone {font-size:20px; line-height:27px; font-weight:normal; margin:0}
     .footer-address {font-size:20px; line-height:27px; font-weight:normal; margin:0}
     .footer-schedule {font-size:20px; line-height:27px; font-weight:normal; margin:0}
-    .footer-copyrights {display:none}
-}
-
-.footer-copyrights-mobile {display:none}
-
-@media screen and (max-width:1159px) {
-    .footer-copyrights-mobile {display:block; position:absolute; right:0; bottom:40px; font-size:18px; line-height:27px; text-align:right; color:#000; width:210px}
+    .footer-social {margin:40px 0 0 0}
+    .footer-social a {width:51px; height:51px}
+    .footer-social a svg {width:51px; height:51px}
 }
