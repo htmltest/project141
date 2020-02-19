@@ -45,15 +45,21 @@
                                         <ul>
                                             <li><a href="#">Информация о компании</a></li>
                                             <li><a href="#">Награды</a></li>
-                                            <li><a href="#">Информация о технических достижениях</a></li>
+                                            <li class="active"><a href="#">Информация о технических достижениях</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Collection</a></li>
                                     <li><a href="#">Design</a></li>
                                     <li><a href="#">Support</a></li>
-                                    <li><a href="#">Varilight TV</a></li>
+                                    <li class="active"><a href="#">Varilight TV</a></li>
                                     <li><a href="#">Contacts</a></li>
                                 </ul>
+                                <div class="nav-contacts">
+                                    <div class="nav-contacts-title">Адрес шоу-рума</div>
+                                    <div class="nav-contacts-value">г. Москва, Научный проезд, д. 19</div>
+                                    <div class="nav-contacts-title">ТЕЛЕФОН</div>
+                                    <div class="nav-contacts-value">+7 (495) 228-32-44</div>
+                                </div>
                                 <div class="nav-social">
                                     <a href="#" target="_blank"><img src="images/social-fb.svg" alt="" /></a>
                                     <a href="#" target="_blank"><img src="images/social-yt.svg" alt="" /></a>
@@ -141,7 +147,7 @@
                         <div class="collection-products-header">
                             <h2>Товары коллекции</h2>
                             <div class="collection-products-ctrl">
-                                <form action="ajax/collection-products-filter.html" method="post">
+                                <form action="/varilight/ajax/collection-products-filter.html" method="post">
                                     <div class="collection-products-filter">
                                         <div class="collection-products-filter-current">
                                             <div class="collection-products-filter-current-title">Фильтр</div>
@@ -155,18 +161,20 @@
                                                     <div class="collection-products-filter-group">
                                                         <div class="collection-products-filter-group-title">Количество сокетов</div>
                                                         <div class="collection-products-filter-group-list">
-                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="1" checked="checked" /><span><div class="filter-sockets"><em></em></div></span></label></div>
-                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="2" /><span><div class="filter-sockets"><em></em><em></em></div></span></label></div>
-                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="3" /><span><div class="filter-sockets"><em></em><em></em><em></em></div></span></label></div>
-                                                            <div class="form-radio"><label><input type="radio" name="sockets" value="4" /><span><div class="filter-sockets"><em></em><em></em><em></em><em></em></div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="sockets1" checked="checked" /><span><div class="filter-sockets"><em></em></div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="sockets2" /><span><div class="filter-sockets"><em></em><em></em></div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="sockets3" /><span><div class="filter-sockets"><em></em><em></em><em></em></div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="sockets4" /><span><div class="filter-sockets"><em></em><em></em><em></em><em></em></div></span></label></div>
                                                         </div>
                                                     </div>
                                                     <div class="collection-products-filter-group">
                                                         <div class="collection-products-filter-group-title">Тип</div>
                                                         <div class="collection-products-filter-group-list">
-                                                            <div class="form-radio"><label><input type="radio" name="type" value="1" checked="checked" /><span>розетка</span></label></div>
-                                                            <div class="form-radio"><label><input type="radio" name="type" value="2" /><span>переключатель</span></label></div>
-                                                            <div class="form-radio"><label><input type="radio" name="type" value="2" /><span>диммер</span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="type1" checked="checked" /><span>розетка</span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="type2" /><span>переключатель</span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="type3" /><span>диммер</span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="type4" /><span>рамка</span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="type5" /><span>монтажная плата</span></label></div>
                                                         </div>
                                                     </div>
                                                     <div class="collection-products-filter-group">
@@ -181,6 +189,18 @@
                                                         <div class="collection-products-filter-group-list">
                                                             <div class="form-radio"><label><input type="radio" name="top" value="1" checked="checked" /><span>с рамкой</span></label></div>
                                                             <div class="form-radio"><label><input type="radio" name="top" value="2" /><span>без рамки</span></label></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collection-products-filter-group">
+                                                        <div class="collection-products-filter-group-title">Цвет покрытия</div>
+                                                        <div class="collection-products-filter-group-list">
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="color1" checked="checked" /><span><div class="filter-color"><img src="/varilight/files/collection-surface-1.jpg" alt="" /> Brushed Brass</div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="color2" /><span><div class="filter-color"><img src="/varilight/files/collection-surface-2.jpg" alt="" /> Polisher Chrome</div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="color3" /><span><div class="filter-color"><img src="/varilight/files/collection-surface-3.jpg" alt="" /> Iridium Black</div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="color4" /><span><div class="filter-color"><img src="/varilight/files/collection-surface-4.jpg" alt="" /> Brushed Steel</div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="color5" /><span><div class="filter-color"><img src="/varilight/files/collection-surface-5.jpg" alt="" /> Polisher Brass</div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="color6" /><span><div class="filter-color"><img src="/varilight/files/collection-surface-6.jpg" alt="" /> Satin Chrome</div></span></label></div>
+                                                            <div class="form-checkbox"><label><input type="checkbox" name="color7" /><span><div class="filter-color"><img src="/varilight/files/collection-surface-7.jpg" alt="" /> Brushed Steel</div></span></label></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -217,102 +237,105 @@
                                 <div class="collection-products-item">
                                     <div class="collection-products-item-wrap">
                                         <a href="#" class="collection-products-item-inner">
-                                            <div class="collection-products-item-preview"><img src="files/collection-item-1.jpg" alt="" /><div class="collection-products-item-newently">Новинка</div></div>
+                                            <div class="collection-products-item-preview"><img src="/varilight/files/collection-item-1.jpg" alt="" /><div class="collection-products-item-newently">Новинка</div></div>
                                             <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
                                             <div class="collection-products-item-price">€ 9.29</div>
                                         </a>
-                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a><a href="#">сравнить</a></div>
                                     </div>
                                 </div>
 
                                 <div class="collection-products-item gold">
                                     <div class="collection-products-item-wrap">
                                         <a href="#" class="collection-products-item-inner">
-                                            <div class="collection-products-item-preview"><img src="files/collection-item-2.jpg" alt="" /><div class="collection-products-item-discontinued">Снято с производства</div></div>
+                                            <div class="collection-products-item-preview"><img src="/varilight/files/collection-item-2.jpg" alt="" /><div class="collection-products-item-discontinued">Снято с производства</div></div>
                                             <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
                                             <div class="collection-products-item-price">€ 9.29</div>
                                         </a>
-                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a><a href="#">сравнить</a></div>
                                     </div>
                                 </div>
 
                                 <div class="collection-products-item">
                                     <div class="collection-products-item-wrap">
                                         <a href="#" class="collection-products-item-inner">
-                                            <div class="collection-products-item-preview"><img src="files/collection-item-3.jpg" alt="" /></div>
-                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
+                                            <div class="collection-products-item-preview"><img src="/varilight/files/collection-item-3.jpg" alt="" /></div>
+                                            <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель</div>
                                             <div class="collection-products-item-price">€ 9.29</div>
                                         </a>
-                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a><a href="#">сравнить</a></div>
                                     </div>
                                 </div>
 
                                 <div class="collection-products-item">
                                     <div class="collection-products-item-wrap">
                                         <a href="#" class="collection-products-item-inner">
-                                            <div class="collection-products-item-preview"><img src="files/collection-item-4.jpg" alt="" /></div>
+                                            <div class="collection-products-item-preview"><img src="/varilight/files/collection-item-4.jpg" alt="" /></div>
                                             <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
                                             <div class="collection-products-item-price">€ 9.29</div>
                                         </a>
-                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a><a href="#">сравнить</a></div>
                                     </div>
                                 </div>
 
                                 <div class="collection-products-item">
                                     <div class="collection-products-item-wrap">
                                         <a href="#" class="collection-products-item-inner">
-                                            <div class="collection-products-item-preview"><img src="files/collection-item-5.jpg" alt="" /></div>
+                                            <div class="collection-products-item-preview"><img src="/varilight/files/collection-item-5.jpg" alt="" /></div>
                                             <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
                                             <div class="collection-products-item-price">€ 9.29</div>
                                         </a>
-                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a><a href="#">сравнить</a></div>
                                     </div>
                                 </div>
 
                                 <div class="collection-products-item">
                                     <div class="collection-products-item-wrap">
                                         <a href="#" class="collection-products-item-inner">
-                                            <div class="collection-products-item-preview"><img src="files/collection-item-6.jpg" alt="" /></div>
+                                            <div class="collection-products-item-preview"><img src="/varilight/files/collection-item-6.jpg" alt="" /></div>
                                             <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
                                             <div class="collection-products-item-price">€ 9.29</div>
                                         </a>
-                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a><a href="#">сравнить</a></div>
                                     </div>
                                 </div>
 
                                 <div class="collection-products-item">
                                     <div class="collection-products-item-wrap">
                                         <a href="#" class="collection-products-item-inner">
-                                            <div class="collection-products-item-preview"><img src="files/collection-item-1.jpg" alt="" /></div>
+                                            <div class="collection-products-item-preview"><img src="/varilight/files/collection-item-1.jpg" alt="" /></div>
                                             <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
                                             <div class="collection-products-item-price">€ 9.29</div>
                                         </a>
-                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a><a href="#">сравнить</a></div>
                                     </div>
                                 </div>
 
                                 <div class="collection-products-item">
                                     <div class="collection-products-item-wrap">
                                         <a href="#" class="collection-products-item-inner">
-                                            <div class="collection-products-item-preview"><img src="files/collection-item-2.jpg" alt="" /></div>
+                                            <div class="collection-products-item-preview"><img src="/varilight/files/collection-item-2.jpg" alt="" /></div>
                                             <div class="collection-products-item-title">Z1EG1B Одноклавишный выключатель/переключатель10А Brushed Brass</div>
                                             <div class="collection-products-item-price">€ 9.29</div>
                                         </a>
-                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a></div>
+                                        <div class="collection-products-item-compare"><a href="#">в сравнение</a><a href="#">сравнить</a></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="pager">
-                                <a href="ajax/collection-products-filter.html" class="pager-prev"></a>
+                                <a href="/varilight/ajax/collection-products-filter.html" class="pager-prev"></a>
                                 <div class="pager-inner">
-                                    <a href="ajax/collection-products-filter.html" class="active">1</a>
-                                    <a href="ajax/collection-products-filter.html">2</a>
-                                    <a href="ajax/collection-products-filter.html">3</a>
-                                    <a href="ajax/collection-products-filter.html">4</a>
-                                    <a href="ajax/collection-products-filter.html">5</a>
+                                    <a href="/varilight/ajax/collection-products-filter.html" class="active">1</a>
+                                    <a href="/varilight/ajax/collection-products-filter.html">2</a>
+                                    <a href="/varilight/ajax/collection-products-filter.html">3</a>
+                                    <a href="/varilight/ajax/collection-products-filter.html">4</a>
+                                    <a href="/varilight/ajax/collection-products-filter.html">5</a>
+                                    <span>...</span>
+                                    <a href="/varilight/ajax/collection-products-filter.html??type1=on&usb=on&ik=on&top=1&color1=on&sort=priceDown&ajaxfilter=Y">31</a>
+                                    <a href="/varilight/ajax/collection-products-filter.html?ajaxfilter=Y">32</a>
                                 </div>
-                                <a href="#" class="pager-next"></a>
+                                <a href="/varilight/ajax/collection-products-filter.html" class="pager-next"></a>
                             </div>
                         </div>
 
@@ -330,7 +353,7 @@
                                     <div class="download-item-text">Внешний вид документов о соответствии довольно часто интересует компании, которые выставляют.</div>
                                 </div>
                                 <div class="download-item">
-                                    <div class="download-item-link"><a href="#"><span>RCU Product Family EAE-KNX Room Control Units</span> PDF 3 MB</a></div>
+                                    <div class="download-item-link"><a href="#"><span>RCU Product Family EAE-KNX Room Control Units Сертификат соответствия</span> PDF 3 MB</a></div>
                                 </div>
                                 <div class="download-item">
                                     <div class="download-item-link"><a href="#"><span>DA100 EAE-KNX Dali Gateway</span> PDF 3 MB</a></div>
@@ -403,6 +426,10 @@
                                     <li><a href="#">Выключатели</a></li>
                                     <li><a href="#">Димеры</a></li>
                                     <li><a href="#">Розетки</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Электронные устройства</a></li>
+                                    <li><a href="#">Дизайн</a></li>
                                 </ul>
                             </div>
                         </div>
