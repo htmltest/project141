@@ -334,6 +334,7 @@ $(document).ready(function() {
         }).done(function(html) {
             $('.collection-products-container').html(html)
             $('.collection-products-container').removeClass('loading');
+            $(window).trigger('resize');
         });
     });
 
