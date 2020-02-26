@@ -1068,8 +1068,8 @@ h3+.download-item {margin-top:0}
 .product-header-container {margin:0 auto}
 .product-header-inner {display:table; width:100%}
 .product-header-photo {display:table-cell; vertical-align:middle; width:468px; line-height:0}
-.product-header-photo-inner {display:block; width:468px; height:256px; text-align:center}
-.product-header-photo img {width:auto; height:256px; transform:translateX(-100vw); opacity:0; transition:all 0.5s 0.5s}
+.product-header-photo-inner {display:block; width:468px; text-align:center}
+.product-header-photo img {width:auto; max-height:256px; transform:translateX(-100vw); opacity:0; transition:all 0.5s 0.5s}
 .product-header.animated .product-header-photo img {transform:translateX(0); opacity:1}
 .product-header-content {display:table-cell; vertical-align:middle; padding:0 0 0 30px; transform:translateX(100vw); opacity:0; transition:all 0.5s 0.75s}
 .product-header.animated .product-header-content {transform:translateX(0); opacity:1}
